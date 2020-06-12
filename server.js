@@ -1,5 +1,8 @@
 const express = require('express')
 const hexalandRoute = require('./routes/api/hexaland')
+const connectDB = require('./config/db')
+
+connectDB()
 
 const app = express()
 const PORT = process.env.PORT || 3000

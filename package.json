@@ -1,0 +1,19 @@
+{
+	"name": "hexaland",
+	"version": "1.0.0",
+	"description": "Intern coding challenge",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server",
+		"server": "nodemon server"
+	},
+	"author": "Samrat De",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongoose": "^5.9.18"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	}
+}

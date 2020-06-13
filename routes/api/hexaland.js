@@ -3,9 +3,9 @@ const randstr = require('randomstring')
 const Hexaland = require('../../models/Hexaland')
 const Cluster = require('../../models/Cluster')
 const dfs = require('../../functions/dfs')
-const removeGridNeighbours = require('../../RemoveGrid/removegrid')
-const checkLeftside = require('../../HotspotCheck/leftside')
-const checkRightside = require('../../HotspotCheck/rightside')
+const removeGridNeighbours = require('../../removeGrid/removegrid')
+const checkLeftside = require('../../hotspotCheck/leftside')
+const checkRightside = require('../../hotspotCheck/rightside')
 
 const router = express.Router()
 

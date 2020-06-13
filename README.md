@@ -47,3 +47,12 @@ here, name is the name of the grid you want to remove.
 ```
 localhost:3000/api/hexaland/info
 ```
+
+input should be JSON data of type:
+
+```
+{
+	"name": "ax",
+}
+```
+here, name is the name of the grid you want information about.

@@ -7,6 +7,7 @@ connectDB()
 const app = express()
 const PORT = process.env.PORT || 3000
 
+app.use(express.json({ extended: false }))
 app.use('/api/hexaland', hexalandRoute)
 
 app.listen(PORT, () => {

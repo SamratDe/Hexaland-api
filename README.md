@@ -1,10 +1,9 @@
-# Project Title
-Hexaland API
+# Hexaland API
 
 ## Getting Started
 * Clone the repository to local machine
 * Run npm install to install all the dependencies
-* Run npm start
+* Run npm start to start the server
 * Run the API in postman
 
 ## Running Test
@@ -17,7 +16,7 @@ localhost:3000/api/hexaland/input
 input should be JSON data of type:
 
 ```
-To coonect grids ax and bx
+To connect grids ax and bx
 
 {
 	"nameOne": "ax",

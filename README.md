@@ -8,7 +8,11 @@ Hexaland API
 * Run the API in postman
 
 ## Running Test
-* __giving input__ : localhost:3000/api/hexaland/input (POST request)
+* __giving input__ : POST request
+
+```
+localhost:3000/api/hexaland/input
+```
 
 input should be JSON data of type:
 
@@ -20,9 +24,14 @@ input should be JSON data of type:
 	"cPtTwo": 5
 }
 ```
-here, nameOne is the already existing grid and nameTwo is the name of new grid to be added. cPtOne and cPtTwo are the connecting sides of nameOne and nameTwo respectively.
+***Important :***
+here, *nameOne is the already existing grid and nameTwo is the name of new grid to be added*. cPtOne and cPtTwo are the connecting sides of nameOne and nameTwo respectively.
 
-* __Removing a grid__ : localhost:3000/api/hexaland/remove (POST request)
+* __Removing a grid__ : POST request
+
+```
+localhost:3000/api/hexaland/remove
+```
 
 input should be JSON data of type:
 
@@ -33,4 +42,8 @@ input should be JSON data of type:
 ```
 here, name is the name of the grid you want to remove.
 
-* __Information about a grid__ : localhost:3000/api/hexaland/info (GET request)
+* __Information about a grid__ : GET request
+
+```
+localhost:3000/api/hexaland/info
+```

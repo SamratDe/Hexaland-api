@@ -3,7 +3,7 @@
 ## Getting Started
 * Clone the repository to local machine
 * Run npm install to install all the dependencies
-* Download MongoDB locally and start the mongodb server
+* Download mongoDB locally and start the mongoDB server
 * Run npm start to start the server
 * Run the API in postman
 

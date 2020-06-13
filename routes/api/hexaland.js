@@ -59,7 +59,6 @@ router.post('/input', async (req, res) => {
 			doc.friends.set(secondCPt, nameOne)
 			doc.friendsConnectionPt.set(nameOne, firstCPt)
 			await doc.save()
-			console.log('grid 2 created!')
 		}
 		checkLeftside(nameOne, cPtOne, nameTwo, cPtTwo, [1, 2, 3, 4, 5, 6])
 		checkRightside(nameOne, cPtOne, nameTwo, cPtTwo, [1, 2, 3, 4, 5, 6])

@@ -39,7 +39,7 @@ To add grid dx to the cluster
 ```
 
 ***Important :***
-here, *nameOne is the already existing grid(except at first when there is not cluster) and nameTwo is the name of new grid to be added. cPtOne and cPtTwo are the connecting sides of nameOne and nameTwo respectively.*
+*here, nameOne is the already existing grid(except at first when there is no cluster) and nameTwo is the name of new grid to be added. cPtOne and cPtTwo are the connecting sides of nameOne and nameTwo respectively.*
 
 * __Removing a grid__ : POST request
 

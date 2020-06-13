@@ -27,6 +27,7 @@ router.post('/input', async (req, res) => {
 		//setting cluster name before joining 2 Grids
 		let cluster = ''
 		if (userOne === null && userTwo === null) {
+			//intial case when both the grids are new
 			const newCluster = new Cluster({
 				name: randstr.generate()
 			})
@@ -64,7 +65,7 @@ router.post('/input', async (req, res) => {
 		checkRightside(nameOne, cPtOne, nameTwo, cPtTwo, [1, 2, 3, 4, 5, 6])
 		res.send({ message: 'Info send to the server!' })
 	} catch (err) {
-		res.send({ error: err })
+		res.status(400).send({ error: err })
 	}
 })
 
@@ -82,7 +83,7 @@ router.post('/remove', async (req, res) => {
 		removeGridNeighbours(name, ob.friendsConnectionPt)
 		// res.send({ message: 'Removed!' })
 	}).catch((err) => {
-		res.send({ error: err })
+		res.status(400).send({ error: err })
 	})
 })
 
@@ -92,7 +93,7 @@ router.get('/info', async (req, res) => {
 		const ob = await Hexaland.find({ name: req.body.name })
 		res.send(ob)
 	} catch (e) {
-		res.send({ error: err })
+		res.status(400).send({ error: err })
 	}
 })
 
